@@ -4,6 +4,12 @@ from datetime import date
 from sqlalchemy import select, func
 from .db import engine
 from .models import transactions
+from .analytics import (
+    get_revenue_insights,
+    get_retention_insights,
+    get_transaction_summary,
+    get_customer_segments,
+)
 
 app = FastAPI(title="Analytics API")
 
@@ -40,6 +46,26 @@ def get_kpis():
         unique_customers=int(row.unique_customers or 0),
         average_order_value=float(row.average_order_value or 0),
     )
+
+
+@app.get("/kpis/revenue")
+def revenue_kpis():
+    return get_revenue_insights()
+
+
+@app.get("/kpis/retention")
+def retention_kpis():
+    return get_retention_insights()
+
+
+@app.get("/kpis/transactions")
+def transactions_kpis():
+    return get_transaction_summary()
+
+
+@app.get("/analytics/customer-segments")
+def customer_segments():
+    return get_customer_segments()
 
 
 @app.get("/transactions/by-date")

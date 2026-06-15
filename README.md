@@ -43,7 +43,72 @@ This repository demonstrates a scalable analytics workflow including:
 
 ## Architecture Flow
 
-Raw Data → Python ETL → PostgreSQL Analytics Tables → FastAPI KPI APIs → Power BI Dashboard
+Raw Data Sources
+       ↓
+Python ETL Pipelines
+       ↓
+Data Cleansing & Validation
+       ↓
+PostgreSQL Analytics Warehouse
+       ↓
+FastAPI Analytics Services
+       ↓
+Power BI Dashboards & Reporting
+
+## Repository Structure
+
+enterprise-data-analytics-platform/
+├── app/
+│   ├── analytics.py
+│   ├── etl.py
+│   ├── main.py
+│   ├── config.py
+│   ├── db.py
+│   └── models.py
+├── sql/
+│   └── schema.sql
+├── data/
+│   ├── raw/
+│   │   └── sample_transactions.csv
+│   └── sample_transactions.csv
+├── powerbi/
+│   ├── dashboard.pbix
+│   ├── dashboard.png
+│   └── README.md
+├── docs/
+│   ├── architecture.md
+│   ├── data-model.md
+│   ├── deployment.md
+│   ├── visualization.md
+│   └── README.md
+├── requirements.txt
+└── README.md
+
+## Sample KPIs
+
+The platform exposes analytics for:
+
+- Total Revenue
+- Monthly Revenue Growth
+- Customer Retention Rate
+- Transaction Volume
+- Average Order Value
+- Customer Segmentation Metrics
+
+## Example API Endpoints
+
+GET /kpis/revenue
+GET /kpis/retention
+GET /kpis/transactions
+GET /analytics/customer-segments
+
+## Deployment
+
+The platform architecture is cloud-ready and can be deployed on:
+
+- Microsoft Azure
+- Amazon Web Services (AWS)
+- Google Cloud Platform (GCP)
 
 ## Setup
 
