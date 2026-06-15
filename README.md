@@ -55,6 +55,14 @@ FastAPI Analytics Services
        ↓
 Power BI Dashboards & Reporting
 
+## System Architecture
+
+![Architecture](docs/architecture.png)
+
+## Dashboard Preview
+
+![Power BI Dashboard](powerbi/dashboard.png)
+
 ## Repository Structure
 
 enterprise-data-analytics-platform/
@@ -107,7 +115,7 @@ GET /analytics/customer-segments
 **GET /kpis/revenue**
 ```json
 {
-  "total_revenue": 824.44,
+  "total_revenue": 824450.75,
   "monthly_revenue_growth": 12.5
 }
 ```
@@ -115,36 +123,36 @@ GET /analytics/customer-segments
 **GET /kpis/retention**
 ```json
 {
-  "total_customers": 4,
-  "repeat_customers": 1,
-  "customer_retention_rate": 25.0
+  "total_customers": 1200,
+  "repeat_customers": 340,
+  "customer_retention_rate": 28.3
 }
 ```
 
 **GET /kpis/transactions**
 ```json
 {
-  "total_transactions": 5,
-  "total_volume": 824.44
+  "total_transactions": 15840,
+  "total_volume": 824450.75
 }
 ```
 
 **GET /analytics/customer-segments**
 ```json
 {
-  "high_value_customers": 1,
-  "mid_value_customers": 2,
-  "low_value_customers": 1
+  "high_value_customers": 280,
+  "mid_value_customers": 600,
+  "low_value_customers": 320
 }
 ```
 
 ## Deployment
 
-The platform architecture is cloud-ready and can be deployed on:
+The platform can be deployed using:
 
-- Microsoft Azure
-- Amazon Web Services (AWS)
-- Google Cloud Platform (GCP)
+- Azure App Service + Azure Database for PostgreSQL
+- AWS EC2 + RDS PostgreSQL
+- GCP Compute Engine + Cloud SQL
 
 ## Setup
 
@@ -199,9 +207,3 @@ For deeper architecture, modeling, and deployment details, see the `docs/` folde
 - `docs/data-model.md` — data modeling and analytical schema design
 - `docs/deployment.md` — Azure/AWS cloud deployment guidance
 - `docs/visualization.md` — report and Power BI dashboard guidance
-
-## Extensions
-
-- Add Power BI dataset definitions and `.pbix` files in the `powerbi/` folder
-- Add additional pipeline sources under `data/raw/`
-- Build incremental load and scheduling with Airflow, Prefect, or cron
