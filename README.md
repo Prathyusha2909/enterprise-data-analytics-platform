@@ -1,6 +1,15 @@
 # Enterprise Data Analytics Platform
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-green)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
+![PowerBI](https://img.shields.io/badge/PowerBI-Dashboard-yellow)
+
 An end-to-end analytics platform for processing, analyzing, and exposing large-scale business transaction datasets.
+
+## Business Problem
+
+Organizations often struggle with fragmented transactional data, delayed reporting, and limited visibility into operational KPIs. This platform centralizes data ingestion, analytics, reporting, and KPI exposure through a unified analytics architecture.
 
 ## Tech Stack
 
@@ -11,12 +20,7 @@ An end-to-end analytics platform for processing, analyzing, and exposing large-s
 - FastAPI
 - Power BI (dashboarding)
 
-## Project Summary
-
-Enterprise Data Analytics Platform | GitHub
-
-Tech Stack: Python, SQL, PostgreSQL, Pandas, Power BI, FastAPI
-
+## Highlights
 - Built an end-to-end enterprise analytics platform for processing and analyzing large-scale business transaction datasets using Python, SQL, and PostgreSQL.
 - Designed ETL pipelines for data ingestion, cleansing, validation, transformation, and loading curated datasets into PostgreSQL for downstream analytics and reporting.
 - Performed exploratory data analysis (EDA) and KPI discovery to identify trends in customer behavior, revenue performance, transaction volume, and operational efficiency.
@@ -40,20 +44,6 @@ This repository demonstrates a scalable analytics workflow including:
 - PostgreSQL-backed curated analytics tables
 - KPI summary endpoints for revenue, transaction volume, and retention
 - Modular pipeline for easy extension to new business domains
-
-## Architecture Flow
-
-Raw Data Sources
-       ↓
-Python ETL Pipelines
-       ↓
-Data Cleansing & Validation
-       ↓
-PostgreSQL Analytics Warehouse
-       ↓
-FastAPI Analytics Services
-       ↓
-Power BI Dashboards & Reporting
 
 ## System Architecture
 
