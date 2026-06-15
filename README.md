@@ -102,6 +102,42 @@ GET /kpis/retention
 GET /kpis/transactions
 GET /analytics/customer-segments
 
+### Sample API Responses
+
+**GET /kpis/revenue**
+```json
+{
+  "total_revenue": 824.44,
+  "monthly_revenue_growth": 12.5
+}
+```
+
+**GET /kpis/retention**
+```json
+{
+  "total_customers": 4,
+  "repeat_customers": 1,
+  "customer_retention_rate": 25.0
+}
+```
+
+**GET /kpis/transactions**
+```json
+{
+  "total_transactions": 5,
+  "total_volume": 824.44
+}
+```
+
+**GET /analytics/customer-segments**
+```json
+{
+  "high_value_customers": 1,
+  "mid_value_customers": 2,
+  "low_value_customers": 1
+}
+```
+
 ## Deployment
 
 The platform architecture is cloud-ready and can be deployed on:
