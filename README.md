@@ -1,4 +1,4 @@
-# Enterprise Data Analytics Platform
+# Enterprise Data Analytics Platform: ETL, Analytics & KPI Reporting System
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-API-green)
@@ -10,6 +10,10 @@ An end-to-end analytics platform for processing, analyzing, and exposing large-s
 ## Business Problem
 
 Organizations often struggle with fragmented transactional data, delayed reporting, and limited visibility into operational KPIs. This platform centralizes data ingestion, analytics, reporting, and KPI exposure through a unified analytics architecture.
+
+## Business Value
+
+The platform enables organizations to transform fragmented transactional data into actionable business insights through automated ETL workflows, centralized analytics storage, KPI monitoring, and self-service reporting.
 
 ## Tech Stack
 
@@ -44,6 +48,17 @@ This repository demonstrates a scalable analytics workflow including:
 - PostgreSQL-backed curated analytics tables
 - KPI summary endpoints for revenue, transaction volume, and retention
 - Modular pipeline for easy extension to new business domains
+
+## Dataset
+
+The platform is designed to process transaction datasets containing:
+
+- Customer records
+- Sales transactions
+- Product information
+- Revenue and retention metrics
+
+The architecture supports scalable processing through modular ETL pipelines and analytics-ready storage layers.
 
 ## System Architecture
 
