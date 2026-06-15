@@ -11,6 +11,18 @@ An end-to-end analytics platform for processing, analyzing, and exposing large-s
 - FastAPI
 - Power BI (dashboarding)
 
+## Project Summary
+
+Enterprise Data Analytics Platform | GitHub
+
+Tech Stack: Python, SQL, PostgreSQL, Power BI, Pandas, FastAPI
+
+- Built an end-to-end analytics platform for processing and analyzing enterprise transaction datasets using Python and SQL.
+- Designed ETL pipelines for data ingestion, cleansing, transformation, and loading into PostgreSQL for downstream analytics and reporting.
+- Developed interactive Power BI dashboards to visualize KPIs, revenue trends, customer behavior, operational performance, and business metrics.
+- Automated reporting workflows using Python and SQL, reducing manual reporting effort and improving data accessibility.
+- Built FastAPI services to expose analytics insights and reporting data to internal applications.
+
 ## Project Overview
 
 This repository demonstrates a scalable analytics workflow including:
