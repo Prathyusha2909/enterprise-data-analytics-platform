@@ -9,6 +9,10 @@ Recommended contents:
 - Report usage documentation
 - `dashboard-guidance.md` for Power BI visualization and reporting best practices
 
+## Dashboard Template
+
+The `dashboard.svg` file provides a visual preview of the KPI dashboard layout showing key metrics: Total Revenue, Transactions, Customer Retention, and Revenue Growth trends. Use this as reference when building your Power BI reports.
+
 ## Power BI Workflow
 
 1. Open Power BI Desktop.

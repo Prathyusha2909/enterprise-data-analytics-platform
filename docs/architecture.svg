@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .box { fill: #4A90E2; stroke: #2E5C8A; stroke-width: 2; }
+      .text { fill: white; font-family: Arial; font-size: 14px; text-anchor: middle; }
+      .title { fill: #333; font-family: Arial; font-size: 18px; font-weight: bold; }
+      .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333" />
+    </marker>
+  </defs>
+  
+  <text x="400" y="30" class="title">Enterprise Data Analytics Platform Architecture</text>
+  
+  <!-- Data Sources -->
+  <rect x="50" y="80" width="120" height="60" class="box"/>
+  <text x="110" y="115" class="text">Raw Data</text>
+  <text x="110" y="130" class="text">Sources</text>
+  
+  <!-- ETL Pipeline -->
+  <rect x="250" y="80" width="120" height="60" class="box"/>
+  <text x="310" y="115" class="text">Python ETL</text>
+  <text x="310" y="130" class="text">Pipeline</text>
+  
+  <!-- PostgreSQL -->
+  <rect x="450" y="80" width="120" height="60" class="box"/>
+  <text x="510" y="115" class="text">PostgreSQL</text>
+  <text x="510" y="130" class="text">Analytics DB</text>
+  
+  <!-- FastAPI -->
+  <rect x="650" y="80" width="120" height="60" class="box"/>
+  <text x="710" y="115" class="text">FastAPI</text>
+  <text x="710" y="130" class="text">Services</text>
+  
+  <!-- Arrows -->
+  <line x1="170" y1="110" x2="250" y2="110" class="arrow"/>
+  <line x1="370" y1="110" x2="450" y2="110" class="arrow"/>
+  <line x1="570" y1="110" x2="650" y2="110" class="arrow"/>
+  
+  <!-- Power BI -->
+  <rect x="250" y="220" width="300" height="80" class="box"/>
+  <text x="400" y="255" class="text">Power BI Dashboards</text>
+  <text x="400" y="275" class="text">KPI Monitoring & Reporting</text>
+  
+  <!-- Arrow from FastAPI to Power BI -->
+  <line x1="710" y1="140" x2="710" y2="180" class="arrow"/>
+  <line x1="710" y1="180" x2="400" y2="220" class="arrow"/>
+  
+  <!-- Key Features -->
+  <g>
+    <text x="50" y="360" class="title">Key Components:</text>
+    <text x="70" y="390" class="text" text-anchor="start">✓ Modular ETL Pipeline</text>
+    <text x="70" y="415" class="text" text-anchor="start">✓ PostgreSQL Analytics Warehouse</text>
+    <text x="70" y="440" class="text" text-anchor="start">✓ RESTful KPI APIs</text>
+    <text x="70" y="465" class="text" text-anchor="start">✓ Power BI Integration</text>
+    <text x="70" y="490" class="text" text-anchor="start">✓ Cloud-Ready Deployment</text>
+  </g>
+</svg>

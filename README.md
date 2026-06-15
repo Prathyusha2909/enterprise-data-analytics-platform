@@ -62,11 +62,11 @@ The architecture supports scalable processing through modular ETL pipelines and 
 
 ## System Architecture
 
-![Architecture](docs/architecture.png)
+![Architecture](docs/architecture.svg)
 
 ## Dashboard Preview
 
-![Power BI Dashboard](powerbi/dashboard.png)
+![Power BI Dashboard](powerbi/dashboard.svg)
 
 ## Repository Structure
 
