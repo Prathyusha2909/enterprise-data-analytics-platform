@@ -86,9 +86,10 @@ enterprise-data-analytics-platform/
 │   └── sample_transactions.csv
 ├── powerbi/
 │   ├── dashboard.pbix
-│   ├── dashboard.png
+│   ├── dashboard.svg
 │   └── README.md
 ├── docs/
+│   ├── architecture.svg
 │   ├── architecture.md
 │   ├── data-model.md
 │   ├── deployment.md
