@@ -1,0 +1,6 @@
+transaction_id,transaction_date,customer_id,amount,product_category,business_unit,status
+T0001,2026-01-05 09:18:00,CUST001,149.95,Software,Digital,Completed
+T0002,2026-01-06 14:22:00,CUST002,79.50,Services,Operations,Completed
+T0003,2026-01-07 11:05:00,CUST003,220.00,Hardware,Sales,Completed
+T0004,2026-01-08 16:45:00,CUST002,59.99,Software,Digital,Pending
+T0005,2026-01-09 10:30:00,CUST004,315.00,Hardware,Sales,Completed

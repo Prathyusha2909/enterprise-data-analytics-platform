@@ -15,13 +15,14 @@ An end-to-end analytics platform for processing, analyzing, and exposing large-s
 
 Enterprise Data Analytics Platform | GitHub
 
-Tech Stack: Python, SQL, PostgreSQL, Power BI, Pandas, FastAPI
+Tech Stack: Python, SQL, PostgreSQL, Pandas, Power BI, FastAPI
 
-- Built an end-to-end analytics platform for processing and analyzing enterprise transaction datasets using Python and SQL.
-- Designed ETL pipelines for data ingestion, cleansing, transformation, and loading into PostgreSQL for downstream analytics and reporting.
-- Developed interactive Power BI dashboards to visualize KPIs, revenue trends, customer behavior, operational performance, and business metrics.
-- Automated reporting workflows using Python and SQL, reducing manual reporting effort and improving data accessibility.
-- Built FastAPI services to expose analytics insights and reporting data to internal applications.
+- Built an end-to-end enterprise analytics platform for processing and analyzing large-scale business transaction datasets using Python, SQL, and PostgreSQL.
+- Designed ETL pipelines for data ingestion, cleansing, validation, transformation, and loading curated datasets into PostgreSQL for downstream analytics and reporting.
+- Performed exploratory data analysis (EDA) and KPI discovery to identify trends in customer behavior, revenue performance, transaction volume, and operational efficiency.
+- Developed interactive Power BI dashboards for visualizing business metrics, customer insights, and operational KPIs to support data-driven decision-making.
+- Automated reporting workflows using Python and SQL, improving data accessibility and reducing manual reporting effort.
+- Built FastAPI-based REST services to expose analytics insights and KPI summaries for integration with internal applications and reporting systems.
 
 ## Project Overview
 
@@ -39,6 +40,10 @@ This repository demonstrates a scalable analytics workflow including:
 - PostgreSQL-backed curated analytics tables
 - KPI summary endpoints for revenue, transaction volume, and retention
 - Modular pipeline for easy extension to new business domains
+
+## Architecture Flow
+
+Raw Data → Python ETL → PostgreSQL Analytics Tables → FastAPI KPI APIs → Power BI Dashboard
 
 ## Setup
 
@@ -85,26 +90,6 @@ uvicorn app.main:app --reload
 
 Then open `http://127.0.0.1:8000/docs` to explore the API.
 
-## Even Better
-
-- Power BI dashboard files/screenshots
-- Data modeling documentation and schema design
-- Data warehouse schema and analytics-ready tables
-- Cloud deployment guidance for Azure or AWS
-- Architecture documentation and project-level design notes
-
-## GitHub Project Entry
-
-This project can be published to GitHub as a complete analytics platform repository. Add the repository to GitHub, then push your local branch:
-
-```powershell
-git init
-git add .
-git commit -m "Initial analytics platform scaffold"
-git remote add origin <your-github-repo-url>
-git push -u origin main
-```
-
 ## Documentation
 
 For deeper architecture, modeling, and deployment details, see the `docs/` folder:
@@ -112,9 +97,10 @@ For deeper architecture, modeling, and deployment details, see the `docs/` folde
 - `docs/architecture.md` — system architecture and data flow
 - `docs/data-model.md` — data modeling and analytical schema design
 - `docs/deployment.md` — Azure/AWS cloud deployment guidance
+- `docs/visualization.md` — report and Power BI dashboard guidance
 
 ## Extensions
 
-- Add Power BI dataset definitions and `.pbix` files in a `powerbi/` folder
+- Add Power BI dataset definitions and `.pbix` files in the `powerbi/` folder
 - Add additional pipeline sources under `data/raw/`
 - Build incremental load and scheduling with Airflow, Prefect, or cron
