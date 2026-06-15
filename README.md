@@ -85,6 +85,14 @@ uvicorn app.main:app --reload
 
 Then open `http://127.0.0.1:8000/docs` to explore the API.
 
+## Even Better
+
+- Power BI dashboard files/screenshots
+- Data modeling documentation and schema design
+- Data warehouse schema and analytics-ready tables
+- Cloud deployment guidance for Azure or AWS
+- Architecture documentation and project-level design notes
+
 ## GitHub Project Entry
 
 This project can be published to GitHub as a complete analytics platform repository. Add the repository to GitHub, then push your local branch:
@@ -96,6 +104,14 @@ git commit -m "Initial analytics platform scaffold"
 git remote add origin <your-github-repo-url>
 git push -u origin main
 ```
+
+## Documentation
+
+For deeper architecture, modeling, and deployment details, see the `docs/` folder:
+
+- `docs/architecture.md` — system architecture and data flow
+- `docs/data-model.md` — data modeling and analytical schema design
+- `docs/deployment.md` — Azure/AWS cloud deployment guidance
 
 ## Extensions
 
