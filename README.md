@@ -22,7 +22,7 @@ The platform enables organizations to transform fragmented transactional data in
 - PostgreSQL
 - Pandas
 - FastAPI
-- Power BI (dashboarding)
+- Power BI
 
 ## Highlights
 - Built an end-to-end enterprise analytics platform for processing and analyzing large-scale business transaction datasets using Python, SQL, and PostgreSQL.
@@ -39,7 +39,7 @@ This repository demonstrates a scalable analytics workflow including:
 - ETL pipeline to ingest raw transaction data from heterogeneous sources
 - Data cleansing, validation, and transformation using Pandas
 - Curated dataset storage in PostgreSQL
-- REST API endpoints powered by FastAPI to expose analytics and KPI results
+- REST API endpoints powered by FastAPI to expose analytics insights, KPI summaries, and reporting data
 - Reporting-ready architecture for Power BI dashboards and internal integrations
 
 ## Key Features
